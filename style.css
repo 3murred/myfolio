@@ -1956,6 +1956,63 @@ section {
 /* MOBILE */
 
 @media (max-width: 760px) {
+  .menu-button {
+    position: relative;
+    display: block;
+  }
+
+  .menu-button button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+
+    min-width: 180px;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+
+    z-index: 9999;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    display: block;
+    padding: 14px 18px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--border);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 9px;
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    color: var(--red);
+    background: rgba(226, 56, 67, 0.05);
+  }
+
   .header {
     padding: 0 18px;
   }
