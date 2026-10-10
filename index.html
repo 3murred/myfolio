@@ -1152,5 +1152,32 @@
       <div>© 2026</div>
     </footer>
     <audio id="background-audio" src="assets/audio/damn.mp3" loop preload="none"></audio>
+  
+    <div class="music-player" id="music-player">
+      <div class="vinyl" id="vinyl">
+        <div class="vinyl-label">
+          <span>M</span>
+        </div>
+      </div>
+
+      <div class="music-info">
+        <span class="music-status" id="music-status">AUDIO PLAYER</span>
+        <span class="music-title">damn.mp3</span>
+
+        <div class="music-timeline">
+          <span id="music-current-time">0:00</span>
+          <input type="range" id="music-progress" min="0" max="100" value="0" step="0.1" aria-label="progresso da musica"/>
+          <span id="music-duration">0:00</span>
+        </div>
+
+        <div class="music-controls">
+          <button type="button" id="music-play" aria-label="reproduzir musica">▶</button>
+          <div class="volume-control">
+            <span aria-hidden="true">VOL</span>
+            <input type="range" id="music-volume" min="0" max="1" step="0.01" value="0.25" aria-label="volume da musica"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
